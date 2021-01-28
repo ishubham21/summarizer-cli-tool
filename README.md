@@ -80,3 +80,10 @@ You can provide input in following languages
 * Finnish
 * Norwegian
 * Other / Multi-language
+
+## I'm looking for help with - 
+
+* Error handling in this package
+* Processing the command-line arguments more precisely
+* Writing better help documents in CLI.
+* Help in making the documentation better and more user-friendly
