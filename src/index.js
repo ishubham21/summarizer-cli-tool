@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
+//figket module
 var figlet = require('figlet');
 
+//printing the ascii art in the console
 figlet('Summarizer', function (err, data) {
     if (err) {
         console.log('Something went wrong...');
@@ -10,10 +12,11 @@ figlet('Summarizer', function (err, data) {
     }
     console.log(data)
 
-    //calling main() function
+    //calling main() function from here to create sync with figlet
     main()
 });
-//requiring file system
+
+//requiring file system to perform file handling
 const fs = require('fs')
 
 //function to process the text and pass summary to the 
@@ -90,6 +93,3 @@ function main() {
     
     yargs.parse() // To set above changes 
 }
-
-//calling the main function to start execution
-//main()
