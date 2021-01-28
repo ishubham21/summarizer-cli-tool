@@ -56,3 +56,27 @@ summarizer summarize --i=input.txt --o=output.txt
 
 ## Important instructions
 * You should have an input file ready but you aren't required to create an output file. The output file will automatically be created with the name you've passed or will be overwritten.
+
+## Languages supported
+
+You can provide input in following languages
+
+* English
+* Dutch
+* French
+* German
+* Italian
+* Portuguese
+* Spanish
+* Russian
+* Chinese
+* Japanese
+* Korean
+* Arabic
+* Danish
+* Swedish
+* Romanian
+* Hungarian
+* Finnish
+* Norwegian
+* Other / Multi-language
