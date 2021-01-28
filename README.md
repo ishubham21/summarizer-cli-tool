@@ -25,7 +25,7 @@ node --version
 summarizer --version
 ```
 
-or
+  or
 
 ```
 summarizer summarize --version
