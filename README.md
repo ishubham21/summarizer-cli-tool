@@ -4,14 +4,14 @@
 
 ## About this CLI tool
 
-Imagine of a situation where you have tons and tons of text to read and a very small time frame given. What you'd expect for? 
+Imagine a situation where you have tons and tons of text to read and a very small time frame given. What you'd expect for? 
 Probably for someone who can help you with summarizing the text?
 
-Well, here's a tool for you. **Summarizer CLI-Tool** is an interative command-line tool which takes a file containing exhaustive text and prints a summarized result containing the basic crux of the original text in a new file of the desired name using text-analysis and Natural Language Processing (NLP).
+Well, here's a tool for you. **Summarizer CLI-Tool** is an interactive command-line tool which takes a file containing exhaustive text and prints a summarized result containing the basic crux of the original text in a new file of the desired name using text-analysis and Natural Language Processing (NLP).
 
 ## Installation
 
-* Check if node is installed in your system
+* Check if the node is installed in your system
 ```
 node --version
 ```
@@ -59,7 +59,7 @@ summarizer summarize --i=input.txt --o=output.txt
 
 ## Languages supported
 
-You can provide input in following languages
+You can provide input in the following languages
 
 * English
 * Dutch
