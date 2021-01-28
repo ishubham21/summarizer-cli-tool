@@ -81,6 +81,10 @@ You can provide input in following languages
 * Norwegian
 * Other / Multi-language
 
+## Result
+
+<p align="center"><img src="https://github.com/ishubham21/summarizer-cli-tool/blob/master/imgs/result.png"></p>
+
 ## I'm looking for help with - 
 
 * Error handling in this package
