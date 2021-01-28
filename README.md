@@ -51,6 +51,8 @@ summarizer summarize --i=input.txt --o=output.txt
 ### Alias (You can use any one of them)
 
 -i = -input
+
 -o = -output
 
-**Note** - You should have an input file ready but you aren't required to create an output file. The output file will automatically be created with the name you've passed or will be overwritten.
+## Important instructions
+* You should have an input file ready but you aren't required to create an output file. The output file will automatically be created with the name you've passed or will be overwritten.
