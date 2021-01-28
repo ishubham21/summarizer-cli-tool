@@ -1,11 +1,12 @@
 {
-  "name": "@ishubham21/cli-tool",
+  "name": "cli-tool",
   "version": "1.0.0",
   "description": "",
+  "main": "./src/index.js",
   "bin": {
-    "say-hello": "./cli.js"
+    "summarizer": "./src/welcome.js",
+    "s-help": "./src/help.js"
   },
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/ishubham21/node-cli/issues"
   },
-  "homepage": "https://github.com/ishubham21/node-cli#readme"
+  "homepage": "https://github.com/ishubham21/node-cli#readme",
+  "dependencies": {
+    "figlet": "^1.5.0",
+    "monkeylearn": "^3.4.0"
+  }
 }
