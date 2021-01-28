@@ -4,15 +4,25 @@
 const fs = require('fs')
 
 function getSummary(text, outputFile) {
+
+    //requiring monkeylearn
     const MonkeyLearn = require('monkeylearn')
 
+    //setting up API key
     const ml = new MonkeyLearn('11526c753b591c9a747b2bd2ec51d87bd69c406a')
     let model_id = 'ex_94WD2XxD'
+
+    //passing the text recieved from input file
     let data = [`"${text}"`]
+
+    //performing extraction i.e. summarization
     ml.extractors.extract(model_id, data).then(res => {
         let summary = res.body[0].extractions[0].parsed_value
         fs.writeFileSync(`${outputFile}`, summary)
     })
+
+    //printing the done message
+    console.log(`Summarization completed1 check ${outputFile} for the results.`);
 }
 
 function handleFiles(inputFile, outputFile) {
