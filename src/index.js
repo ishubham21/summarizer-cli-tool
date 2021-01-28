@@ -22,7 +22,7 @@ function getSummary(text, outputFile) {
     })
 
     //printing the done message
-    console.log(`Summarization completed1 check ${outputFile} for the results.`);
+    console.log(`Summarization completed! Check ${outputFile} for the results.`);
 }
 
 function handleFiles(inputFile, outputFile) {
