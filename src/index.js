@@ -40,7 +40,7 @@ function main() {
     // Create summarize command 
     yargs.command({
         command: 'summarize',
-        describe: 'Summarizes large texts',
+        describe: 'Summarizes large texts to small and precise texts',
         builder: {
             i: {
                 alias: 'input',
