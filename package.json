@@ -1,5 +1,5 @@
 {
-  "name": "cli-tool",
+  "name": "summarizer",
   "version": "1.0.0",
   "description": "",
   "main": "./src/index.js",

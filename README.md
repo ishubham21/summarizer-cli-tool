@@ -11,13 +11,19 @@ Well, here's a tool for you. **Summarizer CLI-Tool** is an interactive command-l
 
 ## Installation
 
+* Clone this repository 
+```
+git clone https://github.com/ishubham21/summarizer-cli-tool.git
+```
+
 * Check if the node is installed in your system
 ```
 node --version
 ```
 
-* Run the following command in your terminal
+* cd into the root folder (i.e. where the package.json file is located) & install the required dependencies
 ```
+npm install
 ```
 
 * Check if the package is installed
