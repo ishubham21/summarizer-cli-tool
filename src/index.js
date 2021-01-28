@@ -1,16 +1,25 @@
 #!/usr/bin/env node
 
-//declaring the input and output files
-var inputFile
-var outputFile
-
 //requiring file system
 const fs = require('fs')
+
+function getSummary(text, outputFile) {
+    const MonkeyLearn = require('monkeylearn')
+
+    const ml = new MonkeyLearn('11526c753b591c9a747b2bd2ec51d87bd69c406a')
+    let model_id = 'ex_94WD2XxD'
+    let data = [`"${text}"`]
+    ml.extractors.extract(model_id, data).then(res => {
+        let summary = res.body[0].extractions[0].parsed_value
+        fs.writeFileSync(`${outputFile}`, summary)
+    })
+}
 
 function handleFiles(inputFile, outputFile) {
     //reading from the input file provided by the user
     const textData = fs.readFileSync(`${inputFile}`, 'utf-8')
-    console.log(textData);
+
+    getSummary(textData, outputFile)
 }
 
 function main() {
@@ -46,3 +55,5 @@ function main() {
     
     yargs.parse() // To set above changes 
 }
+
+main()
