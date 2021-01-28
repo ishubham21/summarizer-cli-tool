@@ -1,20 +1,25 @@
 #!/usr/bin/env node
 
+//declaring the input and output files
+var inputFile
+var outputFile
+
+//requiring file system
+const fs = require('fs')
+
+//requiring yargs
 const yargs = require('yargs')
 
-// Customize yargs version 
-yargs.version('1.1.0')
-
-// Create add command 
+// Create summarize command 
 yargs.command({
-    command: 'Summarize',
+    command: 'summarize',
     describe: 'Summarizes large texts',
     builder: {
         i: {
             alias: 'input',
             describe: 'First Number',
             demandOption: true,  // Required 
-            type: 'number'
+            type: 'file' //specifying the type of argument
         },
         o: {
             alias: 'output',
@@ -26,8 +31,12 @@ yargs.command({
 
     // Function for your command 
     handler(argv) {
-        
+        handleFiles(argv.i, argv.o)
     }
 })
-
 yargs.parse() // To set above changes 
+
+
+function handleFiles(inFile, outFile) {
+    
+}
