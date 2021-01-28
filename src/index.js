@@ -3,6 +3,7 @@
 //requiring file system
 const fs = require('fs')
 
+//function to process the text and pass summary to the 
 function getSummary(text, outputFile) {
 
     //requiring monkeylearn
@@ -57,13 +58,25 @@ function main() {
         },
 
         // Function for your command 
-        handler(argv) {
-            //passing values recieved from the user to the handle file function 
-            handleFiles(argv.i, argv.o)
+        handler(argv) { 
+            //handling the errors
+            try {
+
+                //passing values recieved from the user to the handle file function
+                handleFiles(argv.i, argv.o)
+
+            } catch (error) {
+
+                //printing the errors in the console
+                console.log('Something broke, look below for details');
+                console.log(error);
+            
+            }
         }
     })
     
     yargs.parse() // To set above changes 
 }
 
+//calling the main function to start execution
 main()

@@ -1,8 +1,0 @@
-I read the opportunity description for Summer IT Internship with great interest and would like to learn more about it. 
-To give you a brief overview of my skill set – I have been with the coding community of my University as a Web Developer since the past one year and have contributed to various projects including the main website and a Central Event Registration and Management System. 
-I've been a web design intern at ISOLS group and has worked on many agile designs to produce faster websites. I'm also awarded by Goldman Sachs for completing a Virtual Engineering Program in the field of cybersecurity.
-I'm also an open-source enthusiast and a creative content writer. 
-I'm certified by IBM as a Design Thinker and as a Web Developer by the University of Michigan.  
-I've been in interested in software and programming since my class 11th. I was also able to achieve a score of 97% in Computer Science with C++, MySQL and Networking being a major part of the curriculum. 
-I'm also a good leader and have lead many teams one of them being a team to curate and organize a national-level event for startups. We were even able to get a sponsorship of INR 500,000 from Government of Rajasthan. 
-As a freelance web developer and have developed many projects including static and dynamic websites, chrome-extensions, web-apps, CLIs (Command Line Interfaces), etc.
