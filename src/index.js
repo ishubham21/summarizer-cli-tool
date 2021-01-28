@@ -7,36 +7,42 @@ var outputFile
 //requiring file system
 const fs = require('fs')
 
-//requiring yargs
-const yargs = require('yargs')
+function handleFiles(inputFile, outputFile) {
+    //reading from the input file provided by the user
+    const textData = fs.readFileSync(`${inputFile}`, 'utf-8')
+    console.log(textData);
+}
 
-// Create summarize command 
-yargs.command({
-    command: 'summarize',
-    describe: 'Summarizes large texts',
-    builder: {
-        i: {
-            alias: 'input',
-            describe: 'First Number',
-            demandOption: true,  // Required 
-            type: 'file' //specifying the type of argument
-        },
-        o: {
-            alias: 'output',
-            describe: 'Second Number',
-            demandOption: true,
-            type: 'number'
-        } 
-    },
+function main() {
 
-    // Function for your command 
-    handler(argv) {
-        handleFiles(argv.i, argv.o)
-    }
-})
-yargs.parse() // To set above changes 
-
-
-function handleFiles(inFile, outFile) {
+    //requiring yargs
+    const yargs = require('yargs')
     
+    // Create summarize command 
+    yargs.command({
+        command: 'summarize',
+        describe: 'Summarizes large texts',
+        builder: {
+            i: {
+                alias: 'input',
+                describe: 'Input File',
+                demandOption: true,  // Required 
+                type: 'file' //specifying the type of argument
+            },
+            o: {
+                alias: 'output',
+                describe: 'Output File',
+                demandOption: true,
+                type: 'file'
+            }
+        },
+
+        // Function for your command 
+        handler(argv) {
+            //passing values recieved from the user to the handle file function 
+            handleFiles(argv.i, argv.o)
+        }
+    })
+    
+    yargs.parse() // To set above changes 
 }
