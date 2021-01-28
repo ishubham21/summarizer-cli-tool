@@ -73,7 +73,7 @@ function main() {
             
             }
         }
-    })
+    })   
     
     yargs.parse() // To set above changes 
 }
