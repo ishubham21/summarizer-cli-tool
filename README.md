@@ -39,6 +39,13 @@ summarizer summarize --version
 
 This should print **1.0.0** in your terminal
 
+* If this doesn't work, stop here and cd into the directory where you downloaded this package, and run the following command
+
+```
+npm --force link
+```
+
+
 * Print help (if needed)
 ```
 summarizer summarize --help
